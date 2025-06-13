@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        a{
+            color:red;
+            text-decoration: none;
+            font-weight: bold;
+
+        }
+        a:visited{
+            color:darkred;
+        }
+
+        a:hover{
+            color:black;
+            text-decoration: underline;
+        }
+        a:active{
+            color:yellow;
+        }
+
+        .especial::after{
+            content: '\002B51';
+        }
+        .especial::before{
+            content: '\002B51'
+        }
+        .especial{
+            background-color: rgb(255, 140 ,140);
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://github.com/gustavoguanabara" target="_blank">Github</a></li>
+        <li><a href="https://www.youtube.com/cursoemvideo" target="_blank" class="especial">Canal do youtube</a></li>
+        <li><a href="https://www.estudonauta.com/" target="_blank">Site do Estudonauta</a></li>
+
+
+
+
+
+        <br><br>
+        <address>Rua Kurt Buddemayer, Serra Alta</address>
+        <abbr title="vagina boa">vb</abbr>
+        <q>minha bunda</q>
+        <blockquote>gay</blockquote>
+        <dl>
+            <dt>oi</dt>
+            <dd>cu</dd>
+        </dl>
+    </ul>
+</body>
+</html>

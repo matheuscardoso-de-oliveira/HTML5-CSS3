@@ -1,0 +1,85 @@
+@charset "utf-8";
+
+@font-face{
+    font-family: 'game';
+    src: url('../fonts/Gamejot.ttf') format('truetype')
+}
+
+:root{
+    --cor00:#916FC0;
+    --cor01: #7F6F96;
+    --cor02: #360280;
+    --cor03: #645F6B;
+    --cor04: #261C33;
+    --fonte-gamer: 'game', cursive;
+}
+*{
+    margin:0px;
+    padding: 0px;
+}
+body{
+    background-color: rgba(0, 0, 0, 0.596);
+}
+header{
+    background-color: var(--cor02);
+   box-shadow: 2px 1px 8px rgba(0, 0, 0, 0.295);
+}
+header > h1{
+    color: white;
+    text-align: center;
+    font: normal normal 4em var(--fonte-gamer);
+    padding: 15px;
+    
+}
+nav{
+    background-color: var(--cor02);
+    border-radius: 0 0 6px 6px;
+    padding: 10px;
+   text-align: center;
+}
+nav > a{
+    padding: 10px 20px;
+    
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition-duration: 0.3s;
+}
+nav > a:hover{
+    background-color: var(--cor03);
+    color: black;
+    border-radius: 5px;
+}
+
+main{
+    background-color: #916FC0;
+    margin: auto;
+    min-width: 280px;
+    height: 1200px;
+    margin-bottom: 5px;
+    border-radius: 0 0 5px 5px;
+    
+}
+main article.flutuar{
+   float: left;
+   background-color: white;
+   border: solid 1px black;
+   text-align: justify;
+   max-width: 350px;
+   padding: 20px;
+   text-indent: 2em;
+   margin: 2px;
+   border-radius: 7px;
+}
+#divconteiner::after
+{
+    content: '';
+    display: table;
+    clear: both;
+}
+footer{
+    background-color: #261C33;
+    padding: 4px;
+    color:white;
+    text-align: center;
+}

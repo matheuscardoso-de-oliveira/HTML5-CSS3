@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body{
+            font-family: sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin:10px;
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0;
+            box-shadow: 4px 4px 8px 2px black;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 5px;
+            margin: 0px;
+
+        }
+        article{
+            background-color: lightgray;
+            padding: 5px;
+        }
+        article > aside{
+
+            background-color: rgb(156, 156, 156);
+        }
+        nav{
+            background-color: rgb(107, 105, 105);
+            padding: 6px;
+            box-shadow: 6px 7px 12px 0px rgba(0, 0, 0, 0.356);
+
+        }
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            margin-right: 30px;
+        }
+        nav > a:hover{
+            text-decoration: underline;
+        }
+        footer > p{
+            margin: 0px;
+        }
+        div#bola{
+            height:100px;
+            width:100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50px 50px;;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="assuntos">
+            <p>Esportes Politica Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícia sobre o Brasil </h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum veritatis molestiae voluptates velit eum quis perspiciatis totam, quibusdam excepturi iusto, alias iure in asperiores ipsam omnis optio sequi consectetur adipisci.</p>
+                <picture>
+                    <source media="(min-width: )" srcset="">
+                </picture>
+                <aside>
+                    <p>Artigo escrito por teu pai</p>
+
+                </aside>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por &copyMatheus</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

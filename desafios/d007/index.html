@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon-16x16.png" type="image/x-icon">
+    <title>Imagens dinâmicas</title>
+</head>
+<body>
+    <h1> Imagem fléxivel</h1>
+    <p>VocÊ está vendo uma imagem completa? experimente aumentar a janela e veja a mágica.</p>
+    <picture>
+        <source media="(max-width:800px)" srcset="imagens/girl-300cropada.jpg" type="image/jpeg">
+        <source media="(max-width: 1050px )" srcset="imagens/girl-750.jpg" type="image/jpeg">
+    
+        <img src="imagens/girl-1000.jpg" alt="gatinha" >
+    </picture>
+
+    
+</body>
+</html>

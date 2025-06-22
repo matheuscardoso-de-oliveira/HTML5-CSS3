@@ -11,6 +11,7 @@
         table{
             width: 500px;
             border-collapse:collapse;
+            position: relative;
         }
         tbody  tr:nth-child(even)/*2n*/{
             background-color: lightgray;
@@ -37,6 +38,11 @@
         thead, tfoot{
             background-color: gray;
             color: white;
+        }
+        thead > tr > th{  /*cabeçalho fixo.*/
+            position: sticky;
+            top:-1px;
+            background-color: lightgray;
         }
        
     </style>

@@ -12,6 +12,13 @@
             width: 500px;
             border-collapse:collapse;
         }
+        tbody  tr:nth-child(even)/*2n*/{
+            background-color: lightgray;
+        }
+        tbody tr:nth-child(odd)/*2n-1*/{
+            background-color: rgb(255, 255, 255);
+            font-weight: bold;
+        }
         td, th{
             border: 1px solid black;
             padding: 10px;
@@ -31,6 +38,7 @@
             background-color: gray;
             color: white;
         }
+       
     </style>
 </head>
 <body>

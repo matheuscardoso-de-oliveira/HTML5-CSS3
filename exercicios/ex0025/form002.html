@@ -7,6 +7,18 @@
 </head>
 <body>
     <h1>Teste de formúlario</h1>
-    <form action="cadastro.php" method="post"></form>
+    <form action="cadastro.php" method="POST" autocomplete="off">
+        <p>
+            <label for="iusu">Usuário:</label>
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="10" placeholder="Nome do usuário" autocomplete="username">
+        </p>
+        <p><label for="isen">Senha: </label>
+        <input type="password" name="sen" id="isen" required minlength="8" maxlength="20" size="10" autocomplete="current-password" placeholder="Minímo 8 letras">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
 </body>
 </html>

@@ -4,21 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <form action="cadastro.php" method="get">
 
         <label for="iano">Em que ano você nasceu?</label>
-        <input type="number" name="ano" id="iano" min="1900" max="2025" oninput="calcIdade()">
+        <input type="number" name="ano" id="iano" min="1900" oninput="calcIdade()">
+        <p>
+    
+            <label for="iidade">Idade:</label>
+            <output id="iidade"></output>
+        </p>
         <p>
             <input type="submit" value="Enviar"> 
             <input type="reset" value="Limpar">
         </p>
     </form>
     <script>
+           let dataAtual = new Date();
+            let anoAtual = dataAtual.getFullYear();
+            let anoInput = document.getElementById('iano');
+            anoInput.setAttribute('max', anoAtual);
+            anoInput.setAttribute('min', Number(anoAtual)-100);
         function calcIdade(){
-            let ano = new Date().getFullYear
-            iano.s
+           let nascimento = Number(anoInput.value);
+            let idade = document.getElementById('iidade');
+            idade.innerHTML = Number(anoAtual) - Number(nascimento);
         }
     </script>
 </body>

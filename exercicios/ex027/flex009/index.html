@@ -6,15 +6,18 @@
     <title>Flexible box</title>
     <style>
         div.conteiner{
-            display: flex;
             background-color: lightsalmon;
+            display: flex;
+            flex-flow: row nowrap;
+            
 
         }
         div.item{
-            flex: auto;
+
             background-color: lightskyblue;
             border:1px solid black;
             text-align: center;
+            flex-basis: 200px;
         }
        
     </style>
@@ -23,7 +26,7 @@
     <body>
         <div class="conteiner">
             <div class="item">A</div>
-            <div class="item">B</div>
+            <div class="item">Bzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz</div>
             <div class="item">C</div>
             <div class="item">D</div>
             <div class="item">F</div>

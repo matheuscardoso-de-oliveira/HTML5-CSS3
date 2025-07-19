@@ -25,16 +25,18 @@ header{
     padding: 10px;
 }
 header > h1{
-    border: 1px dotted black;
+   /* border: 1px dotted black;*/
     flex: 0 0 200px;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.425);
 }
 header > nav{
-    border: 1px dotted black;
+   /* border: 1px dotted black;*/
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-end;
 }
 header > nav > a{
+    display: flex;
     background-color: black;
     color: white;
     padding: 11px;
@@ -49,10 +51,20 @@ header > nav > a:hover{
     transition: background-color .5s;
     transition-timing-function: ease;
 }
+
 main{
     background-color: white;
     margin: 10px;
     padding: 10px;
     border-radius: 12px;
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.651);
+}
+span.material-symbols-outlined{
+    background-color: gray;
+    color:white;
+    display:block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    display: none;
 }

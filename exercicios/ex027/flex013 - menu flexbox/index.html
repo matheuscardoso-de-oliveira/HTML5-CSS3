@@ -5,23 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu flexbox</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/mobile.css" media="screen and (max-width: 700px)">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Site</h1>
-        <nav>
+      
+        <nav id="itens">
+         
             <a href="#">opção 1</a>
             <a href="#">opção 2</a>
             <a href="#">opção 3</a>
             <a href="#">opção 4</a>
             <a href="#">opção 5</a>
             <a href="#">opção 6</a>
-           
+            
         </nav>
+      <span class="material-symbols-outlined" onclick="clickou()">menu</span>
+
     </header>
+    
     <main>
         <h2>Teste de flexbox</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, aliquam libero odit accusamus fuga quasi amet, mollitia animi perferendis officia quidem nemo. Fugit laudantium expedita optio mollitia commodi quisquam incidunt? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis laborum eos possimus praesentium aliquid tempora at soluta ex. Necessitatibus, ipsum voluptatem earum vitae similique ab asperiores tempora dicta sunt illum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora distinctio eaque temporibus ipsam numquam suscipit nam repellendus! Eum tempore, neque eaque accusamus sapiente alias dignissimos! Debitis vitae soluta laborum est Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum voluptatibus doloribus quis a quae voluptate, molestias magnam odio mollitia est. Repellat aliquam placeat, dignissimos nobis autem alias! Enim, eius cum!</p>
+        <p id="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, aliquam libero odit accusamus fuga quasi amet, mollitia animi perferendis officia quidem nemo. Fugit laudantium expedita optio mollitia commodi quisquam incidunt? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis laborum eos possimus praesentium aliquid tempora at soluta ex. Necessitatibus, ipsum voluptatem earum vitae similique ab asperiores tempora dicta sunt illum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora distinctio eaque temporibus ipsam numquam suscipit nam repellendus! Eum tempore, neque eaque accusamus sapiente alias dignissimos! Debitis vitae soluta laborum est Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum voluptatibus doloribus quis a quae voluptate, molestias magnam odio mollitia est. Repellat aliquam placeat, dignissimos nobis autem alias! Enim, eius cum!</p>
     </main>
+    <script>
+        function clickou(){
+           if(itens.style.display=='flex'){
+            itens.style.display = 'none'
+           }else{
+            itens.style.display = 'flex'
+           }
+          
+        }
+        function mudouTamanho(){
+            if(window.innerWidth >=701){
+                itens.style.display = 'flex'
+            } else{
+                itens.style.display = 'none'
+            }
+        }
+    </script>
 </body>
 </html>

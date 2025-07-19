@@ -36,7 +36,6 @@ header > nav{
     justify-content: flex-end;
 }
 header > nav > a{
-    display: flex;
     background-color: black;
     color: white;
     padding: 11px;

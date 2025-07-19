@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu flexbox</title>
     <link rel="stylesheet" href="estilos/style.css">
-    <link rel="stylesheet" href="estilos/mobile.css" media="screen and (max-width: 700px)">
+    <link rel="stylesheet" href="estilos/mobile.css" media="screen and (max-width: 768px)">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
 </head>
-<body onresize="mudouTamanho()">
+<body onresize="resize()">
     <header>
         <h1>Site</h1>
       
@@ -22,7 +22,7 @@
             <a href="#">opção 6</a>
             
         </nav>
-      <span class="material-symbols-outlined" onclick="clickou()">menu</span>
+      <span class="material-symbols-outlined" onclick="openMenu()">menu</span>
 
     </header>
     
@@ -31,7 +31,7 @@
         <p id="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, aliquam libero odit accusamus fuga quasi amet, mollitia animi perferendis officia quidem nemo. Fugit laudantium expedita optio mollitia commodi quisquam incidunt? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis laborum eos possimus praesentium aliquid tempora at soluta ex. Necessitatibus, ipsum voluptatem earum vitae similique ab asperiores tempora dicta sunt illum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora distinctio eaque temporibus ipsam numquam suscipit nam repellendus! Eum tempore, neque eaque accusamus sapiente alias dignissimos! Debitis vitae soluta laborum est Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum voluptatibus doloribus quis a quae voluptate, molestias magnam odio mollitia est. Repellat aliquam placeat, dignissimos nobis autem alias! Enim, eius cum!</p>
     </main>
     <script>
-        function clickou(){
+        function openMenu(){
            if(itens.style.display=='flex'){
             itens.style.display = 'none'
            }else{
@@ -39,8 +39,8 @@
            }
           
         }
-        function mudouTamanho(){
-            if(window.innerWidth >=701){
+        function resize(){
+            if(window.innerWidth >768){
                 itens.style.display = 'flex'
             } else{
                 itens.style.display = 'none'

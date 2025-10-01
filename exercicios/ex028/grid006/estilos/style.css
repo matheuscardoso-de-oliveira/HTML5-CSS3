@@ -14,8 +14,10 @@
     grid-column-end: 5;  */ 
     background-color: rgba(255, 0, 0, 0.589);
 
-    /*grid-row: 1 / 2;
-    grid-column: 1 / 5;*/
+    /*
+    grid-row: 1 / 2;
+    grid-column: 1 / 5;
+    */
 
     grid-area: 1 / 1 / 2 / 5;
 
